@@ -31,6 +31,14 @@ Runs all the tests
 
 Submit a new Beta Build to Crashlytics Beta
 
+### android distribute
+
+```sh
+[bundle exec] fastlane android distribute
+```
+
+Submit a build to firebase App Distribution
+
 ### android deploy
 
 ```sh

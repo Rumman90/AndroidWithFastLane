@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "500877572563",
+    "project_id": "rumman-test-projects",
+    "storage_bucket": "rumman-test-projects.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500877572563:android:6845de4df4dbd8a2b11726",
+        "android_client_info": {
+          "package_name": "com.rumman.androidwithfastlane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500877572563-v7aggnm7o0co0jsr51bgdk90jf4ihbvs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOYMpzUnKkAAzsDki_lqlyvAEC697RhRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500877572563-v7aggnm7o0co0jsr51bgdk90jf4ihbvs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

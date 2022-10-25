@@ -30,6 +30,20 @@ platform :android do
     # You can also use other beta testing services here
   end
 
+  desc "Submit a build to firebase App Distribution"
+    lane :distribute do
+      gradle(task: "clean assembleDebug")
+      firebase_app_distribution(
+                  service_credentials_file: "./serviceaccountkey.json",
+                  app: "1:500877572563:android:6845de4df4dbd8a2b11726",
+                  testers: "rummantest0@gmail.com",
+                  release_notes: "First Build Upload"
+      )
+
+      # sh "your_script.sh"
+      # You can also use other beta testing services here
+    end
+
   desc "Deploy a new version to the Google Play"
   lane :deploy do
     gradle(task: "clean assembleRelease")

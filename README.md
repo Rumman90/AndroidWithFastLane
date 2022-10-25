@@ -15,10 +15,12 @@ bundle install
 Then run the below commands
 Fastlane init
 You'll be asked to confirm that you're ready to begin, and then for a few pieces of information. To get started quickly:
-1.	Provide the package name for your application when asked (e.g. com.rumman)
-2.	Press enter when asked for the path to your json secret file
-3.	Answer 'n' when asked if you plan on uploading info to Google Play via fastlane 
+1. Provide the package name for your application when asked (e.g. com.rumman.androidwithfastlane)
+2. Press enter when asked for the path to your json secret file
+3. Answer 'n' when asked if you plan on uploading info to Google Play via fastlane 
 That's it! fastlane will automatically generate a configuration for you based on the information provided.
 You can see the newly created ./fastlane directory, with the following files:
 •	Appfile which defines configuration information that is global to your app
 •	Fastfile which defines the "lanes" that drive the behavior of fastlane
+
+
