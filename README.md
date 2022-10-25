@@ -1,5 +1,5 @@
 # AndroidWithFastLane
-#Fastlane Dependencies install on windows
+## ***Fastlane Dependencies install on windows***
 
 fastlane supports Ruby versions 2.5 or newer. Verify which Ruby version you're using on command prompt:
 
@@ -37,7 +37,7 @@ You can see the newly created ./fastlane directory, with the following files:
 •	Appfile which defines configuration information that is global to your app
 •	Fastfile which defines the "lanes" that drive the behavior of fastlane
 
-#Upload build to firebase app distribution for testing
+# ***Upload build to firebase app distribution for testing***
 
 Add project to Firebase
 
