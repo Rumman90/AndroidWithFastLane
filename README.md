@@ -60,7 +60,7 @@ Then on google cloud console, perform the following steps
 
 3. Download **firebase service key json file** and put it in project root directory
 
-After that, check the **FastFile** of current repo project and see the **distribute lane**
+After that, check the **Fastfile** of current repo project and see the **distribute lane**
 
 Below is the command to run lane
 **bundle exec Fastlane distribute**
