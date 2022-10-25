@@ -54,13 +54,18 @@ Add firebase distribution plugin in app build.gradle
 
 Then on google cloud console, perform the following steps
 
-•	On the Google Cloud Platform console, select your project and create a new service account.
-•	Add the **Firebase App Distribution Admin role**.
+1.	On the Google Cloud Platform console, select your project and create a new service account.
 
-Then run the below command
+2.	Add the **Firebase App Distribution Admin role**.
+
+3. Download **firebase service key json file** and put it in project root directory
+
+After that, check the **FastFile** of current repo project and see the **distribute lane**
+
+Below is the command to run lane
 **bundle exec Fastlane distribute**
 
-distribute is lane in Fastlane fast file and java 11 is required
+Java 11 is required to run lane
 
 
 
