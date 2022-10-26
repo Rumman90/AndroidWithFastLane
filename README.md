@@ -71,5 +71,18 @@ Below is the command to run lane
 
 Java 11 is required to run lane
 
+# ***Upload build to firebase app distribution for testing using github actions and fastlane***
+
+First go to **Actions tab** in your **github repository** and **create a workflow** ,and **commit** it, and then in your android project, run the **git pull** the workflow
+
+After that copy the code from this repository in your workflow file. Then run the below commands
+
+**git add .**
+
+**git commit -m "Your message"**
+
+**git push**
+
+Your build will be uploaded to firebase app distribution
 
 
