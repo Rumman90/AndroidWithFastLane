@@ -45,8 +45,11 @@ jobs:
         with:
           ruby-version: '2.7.2'
 
+      - name: fast lane install
+        run: gem install fastlane
+
       - name: install firebase plugin
-        run: gem install fastlane-plugin-firebase_app_distribution
+        run: fastlane add_plugin firebase_app_distribution
 
         #Gradle Executable
       - name: Gradle Executable
@@ -56,7 +59,7 @@ jobs:
         run : ./gradlew clean
 
       - name : Run the lane
-        run :  fastlane distribute
+        run :  bundle exec fastlane distribute
 
 
 
