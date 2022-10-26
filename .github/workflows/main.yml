@@ -30,9 +30,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-      #Gradle Executable
-      - name: Gradle Executable
-        run: chmod +x gradlew
+
 
   generateApk:
     needs: [build]
@@ -41,6 +39,10 @@ jobs:
       #Checkout Code
       - name: Checkout the code
         uses: actions/checkout@v3
+
+        #Gradle Executable
+      - name: Gradle Executable
+        run: chmod +x gradlew
 
       - name : clean gradle
         run : ./gradlew clean
