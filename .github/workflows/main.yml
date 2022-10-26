@@ -44,6 +44,10 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.7.2'
+
+      - name: install firebase plugin
+        run: gem install fastlane-plugin-firebase_app_distribution
+
         #Gradle Executable
       - name: Gradle Executable
         run: chmod +x gradlew
