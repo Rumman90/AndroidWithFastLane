@@ -48,7 +48,7 @@ jobs:
         run : ./gradlew clean
 
       - name : Run the lane
-        run : fastlane distribute
+        run : bundle exec fastlane distribute
 
 
 

@@ -42,6 +42,7 @@ You can see the newly created ./fastlane directory, with the following files:
 Add project to Firebase
 
 Run below command on android root project directory
+
 **fastlane add_plugin firebase_app_distribution**
 
 Add firebase distribution classpath in project build.gradle
