@@ -40,6 +40,10 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v3
 
+      - name: Ruby version
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.2'
         #Gradle Executable
       - name: Gradle Executable
         run: chmod +x gradlew
@@ -48,7 +52,7 @@ jobs:
         run : ./gradlew clean
 
       - name : Run the lane
-        run : bundle exec fastlane distribute
+        run :  fastlane distribute
 
 
 

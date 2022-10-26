@@ -14,12 +14,15 @@ Open command prompt again.
 And check **ruby –version** and **gem -v** on command prompt to check successful installation. Then install bundler by running below command on command prompt
 
 **gem install bundler**
+
 **gem install Fastlane**
 
 After that Navigate your terminal to your project's directory and run
 
 **bundle init**
+
 **echo 'gem "fastlane"' >> Gemfile**
+
 **bundle install**
 
 Then run the below commands
