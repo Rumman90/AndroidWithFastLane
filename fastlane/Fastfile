@@ -15,17 +15,7 @@
 
 default_platform(:android)
 
-buildTypes {
-        debug {
-        applicationIdSuffix ".debug"
-        debuggable true
-        }
-        release {
-            signingConfig signingConfigs.release
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-}
+
 
 platform :android do
   desc "Runs all the tests"
@@ -46,8 +36,7 @@ platform :android do
   desc "Submit a build to firebase App Distribution"
     lane :distribute do
       #gradle(task: "clean assembleRelease")
-      gradle(task: "assemble"
-             build_type: "Release")
+      gradle(task: "clean assembleRelease")
       firebase_app_distribution(
                   service_credentials_file: "./serviceaccountkey.json",
                   app: "1:500877572563:android:6845de4df4dbd8a2b11726",
