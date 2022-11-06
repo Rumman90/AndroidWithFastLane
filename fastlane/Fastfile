@@ -26,7 +26,7 @@ platform :android do
   desc "Submit a new Beta Build to Crashlytics Beta"
   lane :beta do
     gradle(task: "assemble"
-           build_type: "Release")
+           build_type: "Debug")
     crashlytics
   
     # sh "your_script.sh"
@@ -36,7 +36,7 @@ platform :android do
   desc "Submit a build to firebase App Distribution"
     lane :distribute do
       #gradle(task: "clean assembleRelease")
-      gradle(task: "clean assembleRelease")
+      gradle(task: "clean assembleDebug")
       firebase_app_distribution(
                   service_credentials_file: "./serviceaccountkey.json",
                   app: "1:500877572563:android:6845de4df4dbd8a2b11726",
